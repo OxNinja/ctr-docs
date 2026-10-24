@@ -1,40 +1,18 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: Homepage
+description: Homepage of CTF Speedrun Docs.
+tableOfContents: false
+#template: splash # Remove or comment out this line to display the site sidebar on this page.
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: My personal notes collection about routes, shortcuts, techniques and track-by-track strategies for the original PS1 game. 
   image:
-    file: ../../assets/houston.webp
+    file: ../../../public/images/ctr-logo.png
+    alt: CTR Crash Team Racing (1999) Logo HD by CRASHARKI on DeviantArt
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Start speedrunning
+      link: /tracks/01-crash-cove/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+    - text: About this site
+      link: /about/
       variant: minimal
 ---
-
-import { Card, CardGrid } from '@astrojs/starlight/components';
-
-## Next steps
-
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
-</CardGrid>

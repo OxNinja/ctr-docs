@@ -1,0 +1,175 @@
+
+title: "Papu's Pyramid"
+slug: 09-papus-pyramid
+difficulty: intermediate
+description: >-
+  A technical track with tight turns, jumps and opportunities
+  to preserve reserves.
+
+categories:
+  - any-percent-nmg
+  - 101-percent
+
+notes:
+  - title: "Pyramid climb"
+    content: "Do 3 MT into 2 MT in this order to optimaly climb the pyramid."
+  - title: "Grass shortcut"
+    content: "Avoid losing speed on the grass SC by jumping onto the right uphill of the grass."
+
+boss:
+  isBossTrack: true
+  name: Papu Papu
+
+ctrToken:
+  available: true
+  mapMarkers:
+    - letter: C
+      x: 32.5
+      y: 41.0
+      description: "Near the first major turn"
+    - letter: T
+      x: 57.0
+      y: 28.0
+    - letter: R
+      x: 73.0
+      y: 54.0
+
+relicRace:
+  available: true
+  strategy: >-
+    Prioritize crates along the racing line and plan detours
+    around the sections with the highest crate density.
+
+assets:
+  thumbnail: "/images/tracks/papus-pyramid/thumbnail.webp"
+  minimap: "/images/tracks/papus-pyramid/minimap.webp"
+
+routes:
+  - id: safe
+    name: Beginner route
+    difficulty: beginner
+    categories:
+      - any-percent-nmg
+
+    steps:
+      - step: 1
+        description: "If you srtuggle MT-ing in the pyramid, you can froggy your way up to avoid losing too much time."
+
+      - step: 2
+        description: "Take the pillar shortcut if you can to save time."
+        shortcut: pillar-jump
+
+      - step: 3
+        description: "Take the U-turn shortcut as well, if you can do it."
+        shortcut: uturn-jump
+
+  - id: optimized
+    name: Intermediate route
+    difficulty: intermediate
+    categories:
+      - any-percent-nmg
+
+    steps:
+      - step: 1
+        description: "Climb the pyramid with MTs."
+
+      - step: 2
+        description: "Take the exit boost pad and cut by the grass."
+        shortcut: grass-sc
+
+      - step: 3
+        description: "Take the pillar jump SC and setup for the wall SC."
+        shortcut: pillar-jump
+
+      - step: 4
+        description: "Take the wall SC."
+        shortcut: wall-sc
+
+  - id: performace
+    name: Advanced route
+    difficulty: advanced
+    categories:
+      - any-percent-nmg
+    
+    steps:
+      - step: 1
+        description: "Pray for a mask item on the starting line and go for triple Tizziano SC."
+        shortcut: tizi
+
+shortcuts:
+  - id: pillar-jump
+    name: Pillar jump
+    description: "Jump onto a pillar to cut a big turn."
+
+    categories:
+      - any-percent-nmg
+      - 101-percent
+
+    timeSave:
+      minSeconds: 3
+      maxSeconds: 4
+
+    difficulty: easy
+
+    video:
+      youtubeUrl: "dX2UQmCsbsY"
+      timestamp: "33"
+
+    steps:
+      - instruction: "Approach the jump with sufficient speed."
+        cue: "Wait untill the last moment to jump. Credits: GamerJGB"
+        image: "/images/tracks/papus-pyramid/pillar-setup.png"
+
+  - id: uturn-jump
+    name: U-Turn jump
+    description: "Cut the last turn with a great U-turn jump."
+
+    categories:
+      - any-percent-nmg
+      - 101-percent
+
+    timeSave:
+      minSeconds: 4
+      maxSeconds: 6
+
+    difficulty: easy
+
+    video:
+      youtubeUrl: "4xW0jJ_d3is"
+      timestamp: "35"
+
+    steps:
+      - instruction: "Approach the jump close to the right."
+        cue: "Jump and press & hold brake + direction. Credits: GarlandTheGreat"
+        image: "/images/tracks/papus-pyramid/uturn-setup.jpg"
+
+  - id: tizi
+    name: Tiziano shortcut
+    description: "Skip the entire track by abusing the No Mask Zone."
+
+    categories:
+      - any-percent-nmg
+      - 101-percent
+
+    timeSave:
+      minSeconds: 20
+      maxSeconds: 30
+
+    difficulty: hard
+
+    video:
+      youtubeUrl: "Fr_lo8M9ZLo"
+      timestamp: "6"
+
+    steps:
+      - instruction: "Pray for a mask item."
+        cue: "2 MT towards the wall, pop the mask right before jumping. Credits: Hypnoshark"
+        image: "/images/tracks/papus-pyramid/tizi-setup.png"
+      - instruction: "Ride the wall."
+        cue: "Get the best bounce you can and try to land into the NMZ."
+        image: "/images/tracks/papus-pyramid/tizi.gif"
+
+timeTargets:
+  nTropyUnlock: "1:59.88"
+  nTropyGhost: "1:46.24"
+  oxideGhost: "1:38.96"

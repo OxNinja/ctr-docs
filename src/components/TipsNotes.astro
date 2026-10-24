@@ -1,0 +1,18 @@
+---
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+const { data } = Astro.props;
+---
+
+<CardGrid stagger>
+  <Card title="Relic strategy" icon="clock">
+    { data.relicRace.strategy }
+  </Card>
+  {
+    data.notes.map((note) => (
+        <Card title={ note.title }>
+            { note.content }
+        </Card>
+    ))
+  }
+</CardGrid>

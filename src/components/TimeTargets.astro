@@ -1,0 +1,26 @@
+---
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard } from '@astrojs/starlight/components';
+
+const { data } = Astro.props;
+const timeTargets = data.timeTargets;
+---
+
+<CardGrid stagger>
+  <Card title="Unlock N. Tropy ghost" icon="clock">
+    <h4>{timeTargets.nTropyUnlock}</h4>
+  </Card>
+  <Card title="Unlock Oxide ghost" icon="clock">
+    <h4>{timeTargets.nTropyGhost}</h4>
+  </Card>
+  <Card title="Beat Oxide ghost" icon="clock">
+    <h4>{timeTargets.oxideGhost}</h4>
+  </Card>
+</CardGrid>
+
+<h2>Want more challenge?</h2>
+<LinkCard
+    title="CTR4ever standard time"
+    href="https://ctr4ever.com/standards"
+    description='Community-driven time trial track times (external link)'
+/>

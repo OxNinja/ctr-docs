@@ -1,0 +1,51 @@
+---
+import { Badge } from '@astrojs/starlight/components';
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { Steps } from '@astrojs/starlight/components';
+
+const { shortcut } = Astro.props;
+---
+
+<div>
+    <h4 id={ shortcut.id }>{ shortcut.name }</h4>
+    <p> Used in:
+        {
+            shortcut.categories.map((category) => (
+                <span> </span>
+                <Badge text={ category } variant="note" />
+            ))
+        }
+    </p>
+    <p>{ shortcut.description }</p>
+
+    <CardGrid>
+        <Card title="Time save" icon="clock">
+            <h4>{ shortcut.timeSave.minSeconds }s - { shortcut.timeSave.maxSeconds }s</h4>
+        </Card>
+        <Card title="Difficulty" icon="list-format">
+            <Badge text={ shortcut.difficulty } variant="note" size="large" />
+        </Card>
+    </CardGrid>
+
+    <Tabs>
+        <TabItem label="Steps">
+            <Steps>
+                <ol>
+                    {
+                        shortcut.steps.map((step) => (
+                            <li>
+                                <p>{ step.instruction }</p>
+                                <p>{ step.cue }</p>
+                                <img src={step.image} loading="lazy">
+                            </li>
+                        ))
+                    }
+                </ol>
+            </Steps>
+        </TabItem>
+        {
+            shortcut.video && <TabItem label="Video"><iframe width="512" height="450" src={"https://www.youtube-nocookie.com/embed/" + shortcut.video.youtubeUrl + "?start=" + shortcut.video.timestamp} title="Shbortcut video (Youtube)" allowfullscreen></iframe></TabItem>
+        }
+    </Tabs>
+</div>

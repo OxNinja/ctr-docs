@@ -1,0 +1,37 @@
+---
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Badge } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+
+const { data } = Astro.props;
+---
+
+<CardGrid>
+    <Card title="Description">
+      { data.description }
+    </Card>
+    <Card title="Categories">
+      {
+          data.categories.map((category) => (
+              <Badge text={ category } variant="note" />
+              <span> </span>
+          ))
+      }
+    </Card>
+    <Card title="Infos">
+      <ul>
+          <li>Shortcuts: { data.shortcuts.length }</li>
+          { data.boss.isBossTrack ? <li>Boss: {data.boss.name}</li> : '' }
+          <li>CTR token: { data.ctrToken.available }</li>
+      </ul>
+    </Card>
+    <Card title="Map">
+      <Image
+          src={ data.assets.minimap }
+          alt="Track's minimap"
+          width=128
+          height=128
+      />
+      
+    </Card>
+</CardGrid>

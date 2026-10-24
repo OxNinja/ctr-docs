@@ -1,0 +1,15 @@
+---
+import ShortcutCard from "./ShortcutCard.astro";
+
+const { data } = Astro.props;
+---
+
+<h2>Shortcuts</h2>
+
+<div>
+    {
+        data.shortcuts.map((shortcut) => (
+            <ShortcutCard shortcut={shortcut} />
+        ))
+    }
+</div>

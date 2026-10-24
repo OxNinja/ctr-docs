@@ -1,0 +1,34 @@
+
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { Badge } from '@astrojs/starlight/components';
+import { getTrack } from '../lib/tracks';
+import TrackOverview from './TrackOverview.astro';
+import RouteSection from './RouteSection.astro';
+import Shortcuts from './Shortcuts.astro';
+import TimeTargets from './TimeTargets.astro';
+import TipsNotes from './TipsNotes.astro';
+
+const { track } = Astro.props;
+const data = await getTrack(track);
+---
+
+<div class="track-guide">
+    <p>Difficulty: <Badge text={data.difficulty} variant="note" /></p>
+</div>
+
+<Tabs>
+    <TabItem label="Overview" icon="open-book">
+        <TrackOverview data={data} />
+    </TabItem>
+    <TabItem label="Route / shortcuts" icon="code-branch">
+        <RouteSection data={data} />
+        <Shortcuts data={data} />
+    </TabItem>
+    <TabItem label="Splits / lap times" icon="clock">
+        <TimeTargets data={data} />
+    </TabItem>
+    <TabItem label="Tips" icon="notes">
+        <TipsNotes data={data} />
+    </TabItem>
+</Tabs>
