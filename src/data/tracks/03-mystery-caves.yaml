@@ -1,0 +1,104 @@
+
+title: "Mystery Caves"
+slug: 03-mystery-caves
+difficulty: intermediate
+description: >-
+  A somewhat complex track, requires to froggy and SG.
+
+categories:
+  - any-percent-nmg
+  - 101-percent
+
+notes:
+  - title: "Speed ghost is key"
+    content: "Take advantage of the big downhills to get good SGs."
+
+boss:
+  isBossTrack: false
+
+ctrToken:
+  available: true
+  mapMarkers:
+    - letter: C
+      x: 32.5
+      y: 41.0
+      description: "Near the first major turn"
+    - letter: T
+      x: 57.0
+      y: 28.0
+    - letter: R
+      x: 73.0
+      y: 54.0
+
+relicRace:
+  available: true
+  strategy: >-
+    Prioritize crates along the racing line and plan detours
+    around the sections with the highest crate density.
+
+assets:
+  thumbnail: "/images/tracks/mystery-caves/thumbnail.webp"
+  minimap: "/images/tracks/mystery-caves/minimap.webp"
+
+routes:
+  - id: safe
+    name: Beginner route
+    difficulty: beginner
+    categories:
+      - any-percent-nmg
+
+    steps:
+      - step: 1
+        description: "Do as many MT as possible."
+
+      - step: 2
+        description: "Get the wumpa crates when possible."
+
+  - id: performace
+    name: Advanced route
+    difficulty: advanced
+    categories:
+      - any-percent-nmg
+    
+    steps:
+      - step: 1
+        description: "MT onto the first boost pad and jump on the right turtle into the off-road shortcut."
+        shortcut: offroad
+
+      - step: 2
+        description: "Froggy after the big downhill after the second turtles. Take the wumpa crate on the first lap."
+
+      - step: 3
+        description: "Keep froggying untill the big uphill, try to double jump on the jump boost pads."
+
+      - step: 4
+        description: "Do as much full MTs as possible, keep cornering."
+
+shortcuts:
+  - id: offroad
+    name: Off-road shortcut
+    description: "Jump onto the litle bump and froggy to keep speed, cutting the turn."
+
+    categories:
+      - any-percent-nmg
+      - 101-percent
+
+    timeSave:
+      minSeconds: 3
+      maxSeconds: 4
+
+    difficulty: medium
+
+    video:
+      youtubeUrl: "Pg2TVmfSSAQ"
+      timestamp: "97"
+
+    steps:
+      - instruction: "Drift onto the off-road. Go left or right of the mushrooms. Right is easy but slower."
+        cue: "Keep on drifting without jumping or it will slow you down. Credits: Alessandro Mastroianni"
+        image: "/images/tracks/mystery-caves/offroad-setup.jpg"
+
+timeTargets:
+  nTropyUnlock: "1:34.19"
+  nTropyGhost: "1:23.65"
+  oxideGhost: "1:19.17"

@@ -1,0 +1,105 @@
+
+title: "Crash Cove"
+slug: 01-crash-cove
+difficulty: beginner
+description: >-
+  A simple track, perfect example of MT and reserves management.
+
+categories:
+  - any-percent-nmg
+  - 101-percent
+
+notes:
+  - title: "Reserves management is key"
+    content: "Keep as much reserves as possible through the track. You might want to froggy at the start line for laps 2 and 3."
+
+boss:
+  isBossTrack: false
+
+ctrToken:
+  available: true
+  mapMarkers:
+    - letter: C
+      x: 32.5
+      y: 41.0
+      description: "Near the first major turn"
+    - letter: T
+      x: 57.0
+      y: 28.0
+    - letter: R
+      x: 73.0
+      y: 54.0
+
+relicRace:
+  available: true
+  strategy: >-
+    Prioritize crates along the racing line and plan detours
+    around the sections with the highest crate density.
+
+assets:
+  thumbnail: "/images/tracks/crash-cove/thumbnail.webp"
+  minimap: "/images/tracks/crash-cove/minimap.webp"
+
+routes:
+  - id: safe
+    name: Beginner route
+    difficulty: beginner
+    categories:
+      - any-percent-nmg
+
+    steps:
+      - step: 1
+        description: "Get the wumpa crate on the first jump."
+
+      - step: 2
+        description: "Take the jump shortcut if you can to save time."
+        shortcut: jump
+
+      - step: 3
+        description: "Get as many MT as possible."
+
+  - id: performace
+    name: Advanced route
+    difficulty: advanced
+    categories:
+      - any-percent-nmg
+    
+    steps:
+      - step: 1
+        description: "Get the wumpa crate on the first jump."
+
+      - step: 2
+        description: "Take the jump shortcut to save time, land into an MT."
+        shortcut: jump
+
+      - step: 3
+        description: "Jump off the left of the bridge to get a small landing boost."
+
+shortcuts:
+  - id: jump
+    name: Intended jump
+    description: "Jump/double jump onto the grass platform to cut the second turn."
+
+    categories:
+      - any-percent-nmg
+      - 101-percent
+
+    timeSave:
+      minSeconds: 3
+      maxSeconds: 4
+
+    difficulty: easy
+
+    video:
+      youtubeUrl: "dVkdKtVH_Pw"
+      timestamp: "14"
+
+    steps:
+      - instruction: "Approach the jump with sufficient speed."
+        cue: "Simple or double jump at the edge of the water to bounce high. Credits: Garma1337"
+        image: "/images/tracks/crash-cove/jump-setup.jpg"
+
+timeTargets:
+  nTropyUnlock: "1:34.86"
+  nTropyGhost: "1:27.52"
+  oxideGhost: "1:32.35"
