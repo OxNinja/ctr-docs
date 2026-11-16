@@ -4,11 +4,15 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://ctr.0xninja.fr',
 	integrations: [
 		starlight({
 			title: 'CTR Speedrun Docs',
 			favicon: '/favicon.ico',
-			// social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			editLink: {
+				baseUrl: 'https://github.com/OxNinja/ctr-docs/edit/main/',
+			},
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/OxNinja/ctr-docs' }],
 			// sidebar: [
 			// 	{
 			// 		label: 'Guides',
