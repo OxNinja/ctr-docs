@@ -11,7 +11,7 @@ categories:
 
 notes:
   - title: "Speed ghost is key"
-    content: "Take advantage of the big downhills to get good SGs."
+    content: "Take advantage of the big downhills to get good SGs. Carry your SGs as far as possible to keep speed longer."
 
 boss:
   isBossTrack: false
@@ -84,21 +84,21 @@ shortcuts:
       - 101-percent
 
     timeSave:
-      minSeconds: 3
-      maxSeconds: 4
+      minSeconds: 2
+      maxSeconds: 5
 
     difficulty: medium
 
     video:
-      youtubeUrl: "Pg2TVmfSSAQ"
-      timestamp: "97"
+      youtubeUrl: "qStYJgQZRkQ"
+      timestamp: "43"
 
     steps:
-      - instruction: "Drift onto the off-road. Go left or right of the mushrooms. Right is easy but slower."
-        cue: "Keep on drifting without jumping or it will slow you down. Credits: Alessandro Mastroianni"
+      - instruction: "Jump on the small bump, froggy to keep as much speed as possible."
+        cue: "Jump on the left side of the bump. Credits: Alessandro Mastroianni"
         image: "/images/tracks/mystery-caves/offroad-setup.jpg"
 
 timeTargets:
-  nTropyUnlock: "1:34.19"
-  nTropyGhost: "1:23.65"
-  oxideGhost: "1:19.17"
+  nTropyUnlock: "1:55.00"
+  nTropyGhost: "1:44.00"
+  oxideGhost: "1:32.00"
